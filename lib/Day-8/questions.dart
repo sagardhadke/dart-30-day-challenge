@@ -111,4 +111,38 @@ yearsSubscribed = 3
 String membership = yearsSubscribed >= 5 ? 'Gold' : yearsSubscribed >= 2 ? 'Silver' : 'Bronze';
 Print membership level
 
+* LEVEL 3: ADVANCED
+
+Q21. Loan Eligibility System:
+age = 30, salary = 40000, creditScore = 750
+Check: age >= 21 && age <= 60 && salary >= 30000 && creditScore >= 700
+Use ternary: String eligible = (condition) ? 'Loan Approved' : 'Loan Rejected';
+Print result
+
+Q22. Movie Ticket Validator:
+age = 16, hasParent = false, movieRating = 'A'
+Logic: A-rated movies need age >= 18 OR (age >= 13 AND hasParent)
+Check: movieRating == 'A' && (age >= 18 || (age >= 13 && hasParent))
+Use ternary to print: 'Entry Allowed' or 'Entry Denied'
+
+Q23. Grade Calculator with Multiple Conditions:
+marks = 78, attendance = 85
+Final grade depends on: marks >= 90 AND attendance >= 80 (A grade)
+Or: marks >= 75 AND attendance >= 75 (B grade)
+Or: marks >= 60 (C grade)
+Use nested ternary to assign and print grade
+
+Q24. Delivery Charge Calculator:
+distance = 15 km, orderValue = 600, isPremium = true
+Logic: If isPremium, free delivery
+Else if orderValue >= 500, free delivery
+Else if distance <= 10, Rs. 50
+Else Rs. 100
+Use ternary operators to calculate and print charge
+
+Q25. Working Hours Validator:
+day = 'Saturday', time = 14 (24-hour format), isHoliday = false
+Shop open: Monday-Friday (9-18) OR Saturday (9-14), NOT on holidays
+Check: !isHoliday && ((day != 'Saturday' && day != 'Sunday' && time >= 9 && time <= 18) || (day == 'Saturday' && time >= 9 && time <= 14))
+Print: 'Shop Open' or 'Shop Closed'
  */
